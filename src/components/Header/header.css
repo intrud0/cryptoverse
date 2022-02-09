@@ -1,0 +1,114 @@
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background: black;
+  padding: 0.5em;
+}
+
+.header-left {
+  margin-left: 1em;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  background-color: black;
+  z-index: 9999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 0.7em 2em;
+  display: block;
+}
+
+nav ul a:hover {
+  background: white;
+  color: black;
+}
+
+nav .close {
+  width: 2.5em;
+  stroke: white;
+  float: right;
+  margin: 2em;
+  cursor: pointer;
+}
+
+nav .close path {
+  fill: white;
+}
+
+.menu {
+  width: 2.5em;
+  margin: 0.3em 1em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  .header-left {
+    margin-left: 1em;
+    padding: 0.9em 1.7em;
+    color: white;
+  }
+  nav {
+    position: unset;
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: black;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  nav ul {
+    margin-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  nav ul a:hover {
+    color: white;
+    background: none;
+    text-decoration: underline;
+  }
+  nav .close {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

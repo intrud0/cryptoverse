@@ -1,0 +1,25 @@
+.hero-container {
+  margin: 1em;
+  padding: 2em;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero-title {
+  border-bottom: 0.1em solid #f3f0f0;
+}
+
+.hero-data-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-top: 0.5em;
+}
+
+.hero-data .h4 {
+  border-bottom: 1px solid gray;
+}
+/*# sourceMappingURL=homepage.css.map */
